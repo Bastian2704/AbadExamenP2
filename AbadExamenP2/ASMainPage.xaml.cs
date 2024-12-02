@@ -25,8 +25,33 @@
           //  Resultado.Text = "valor.ToString()";
             if (pick1 == 0 && pick2 == 0)
             {
-                
+                valor = valor;
             }
+            if (pick1 == 0 && pick2 == 1)
+            {
+                valor = valor*0.0001;
+            }
+            if (pick1 == 0 && pick2 == 2)
+            {
+                valor = valor * 0.000247105;
+            }
+            if (pick1 == 1 && pick2 == 0)
+            {
+                valor = valor * 10000;
+            }
+            if (pick1 == 1 && pick2 == 1)
+            {
+                valor = valor;
+            }
+            if (pick1 == 1 && pick2 == 2)
+            {
+                valor = valor * 2.471049999999995084;
+            }
+            if (pick1 == 2 && pick2 == 1)
+            {
+                valor = valor * 0.40468501750943336459;
+            }
+
         }
         void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         {
