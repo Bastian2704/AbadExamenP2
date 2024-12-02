@@ -48,13 +48,14 @@ Text="Seleccione la Medida a la que se Convertirá:"/>
                 </Picker>
 
             </VerticalStackLayout>
-            <Label x:Name="resultado"/>
+            <Label x:Name="resultado"
+                   Text="Resultado"/>
 
 
 
 
         </HorizontalStackLayout>
-        <Entry x:Name="TextEditor"
+        <Entry x:Name="numero"
                 Keyboard="Numeric"    
                 Placeholder="Ingrese el valor" />
         <Button
