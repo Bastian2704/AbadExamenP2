@@ -19,11 +19,47 @@
               Text="Metros Cuadrados / Hectáreas / Acres"
               Style="{StaticResource SubHeadline}"
               SemanticProperties.HeadingLevel="Level2"/>
+        <HorizontalStackLayout HorizontalOptions="Fill"> 
+            <VerticalStackLayout>
+                <Label
+Text="Seleccione la Medida a Convertir:"/>
+                <Picker x:Name="picker1">
+                <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>Metros Cuadrados</x:String>
+                        <x:String>Hectáreas</x:String>
+                        <x:String>Acres</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                </Picker>
 
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label
+Text="Seleccione la Medida a la que se Convertirá:"/>
+                <Picker x:Name="picker2">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Metros Cuadrados</x:String>
+                            <x:String>Hectáreas</x:String>
+                            <x:String>Acres</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </VerticalStackLayout>
+            <Label x:Name="resultado"/>
+
+
+
+
+        </HorizontalStackLayout>
+        <Entry x:Name="TextEditor"
+                Keyboard="Numeric"    
+                Placeholder="Ingrese el valor" />
         <Button
               x:Name="CounterBtn"
-              Text="Click me" 
-              SemanticProperties.Hint="Counts the number of times you click"
+              Text="Resultado" 
               Clicked="OnCounterClicked"
               HorizontalOptions="Fill" />
     </StackLayout>
